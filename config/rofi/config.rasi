@@ -1,0 +1,59 @@
+configuration {
+	font: "Arial 12";
+	modi: "drun,run,window";
+	fullscreen: false;
+	sidebar-mode: false;
+	disable-history: false;
+	show-icons: true;
+}
+
+* {
+	bg: #00000044;
+	bg-alt: #000000FF;
+	fg: #ABB2BF;
+	fg-alt: #5D5E72;
+	text-color: #CBD2DF;
+
+	background-color: @bg;
+	border: 2;
+	margin: 2;
+	padding: 1;
+	spacing: 1;
+}
+
+element, entry, prompt {
+	padding: 10;
+	text-color: @text-color;
+}
+
+element selected {
+	background-color: @bg-alt;
+	text-color: @text-color;
+}
+
+inputbar {
+	children: [entry];
+}
+
+listview {
+	lines: 8;
+	scrollbar: false;
+}
+
+mainbox {
+	children: [inputbar, listview];
+}
+
+scrollbar {
+	background-color: @bg-alt;
+	handle-color: @fg;
+	padding: 3;
+	margin: 0 0 0 0;
+}
+
+window {
+	border: 2;
+	border-color: @fg-alt;
+	padding: 10;
+	transparency: "real";
+}
