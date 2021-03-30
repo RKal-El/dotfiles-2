@@ -136,7 +136,7 @@ function theme.at_screen_connect(s)
 		-- get screen size and widget size to calculate centre position
 		width = dpi(1350),
 		height = dpi(28),
-		ontop = true,
+		ontop = false,
 		screen = mouse.screen,
 		expand = true,
 		visible = true,
