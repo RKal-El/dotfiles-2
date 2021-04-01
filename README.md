@@ -11,13 +11,14 @@ sudo apt install rofi picom fonts-firacode fonts-noto xfce4-power-manager nm-tra
 ```
 ### clone o repositório
 ```bash
-git clone --depth 1 https://github.com/murilo-menezes/dotfiles && cd dotfiles
+git clone --depth=1 https://github.com/murilo-menezes/dotfiles && cd dotfiles
 ```
 ### faça backup em sua configuração atual
 ```bash
 mv ~/.config/awesome ~/.config/awesome.backup
 mv ~/.config/rofi ~/.config/rofi.backup
 mv ~/.config/picom.conf ~/.config/picom.conf.backup
+mv ~/.config/nvim ~/.config/nvim.backup
 ```
 ### mova a nova configuração para o diretório
 ```bash
