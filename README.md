@@ -32,3 +32,8 @@ mv ~/.xinitrc ~/.xinitrc.backup
 cp -r ./.config/* ~/.config
 cp ./.xinitrc ~/.xinitrc
 ```
+### when you open neovim run:
+```vim
+:PlugInstall
+```
+it can take some minutes
