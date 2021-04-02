@@ -7,12 +7,17 @@
 # installation
 ### Install the dependencies:
 ```bash
-sudo apt install rofi picom fonts-firacode fonts-noto xfce4-power-manager nm-tray flameshot kitty
+sudo apt install rofi picom fonts-firacode fonts-noto xfce4-power-manager nm-tray flameshot kitty lxappearence
 ```
 ### install vim-plug
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+### install papirus icon theme
+```bash
+wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
 
 ### clone the repo
@@ -37,3 +42,5 @@ cp ./.xinitrc ~/.xinitrc
 :PlugInstall
 ```
 it can take some minutes
+
+### now open lxappearence and set the icon theme as ePapirus
